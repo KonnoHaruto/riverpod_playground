@@ -5,7 +5,11 @@ import 'package:riverpod_playground/model/todo.dart';
 // StateNotifierを継承したclass.
 // TodoのリストをStateに持ち、Todoを操作するクラス
 class TodoListNotifier extends StateNotifier<List<Todo>> {
-  TodoListNotifier() : super([]);
+  TodoListNotifier() : super([
+    const Todo(id: '1a1a', title: '薪を焚べる'),
+    const Todo(id: '1b1b', title: '釣竿をいなす'),
+    const Todo(id: '1c1c', title: '電球を磨く'),
+  ]);
 
   // 作成
   void add(Todo todo) {
