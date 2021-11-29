@@ -21,7 +21,7 @@ class HomePage extends ConsumerWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              '${ref.watch(counterProvider)}',
+              '${counter.state}',
               style: const TextStyle(fontSize: 40),
             ),
             ElevatedButton(
