@@ -1,4 +1,5 @@
-import 'package:riverpod/riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 
 // 外部からは変更できない値を公開できる基本的なProvider.
 // 内部からは変更可能。
