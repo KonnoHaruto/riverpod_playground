@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_playground/view/todo_list_page.dart';
 
-import 'view/home_page.dart';
 
 void main() {
   runApp(const ProviderScope(
@@ -16,7 +16,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return const MaterialApp(
-      home: HomePage(),
+      home: TodoListPage(),
     );
   }
 }
